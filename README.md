@@ -21,3 +21,5 @@ These are the languages and programs I'm currently using to study: 👨🏻‍�
 [![My Skills](https://skillicons.dev/icons?i=vscode,cpp)](https://skillicons.dev) 
 
 Feel free to explore and leave any suggestions! 😁💬
+
+License: [MIT License](https://choosealicense.com/licenses/mit/)
