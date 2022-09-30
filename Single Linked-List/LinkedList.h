@@ -11,6 +11,8 @@ class LinkedList {
         Node<T>* head;
         LinkedList();
         LinkedList(Node<T> *);
+        Node<T>* nodeExists(int);
+        void appendNode(Node<T> *);
 };
 
 #endif
