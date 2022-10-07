@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Node.h"
 #include "LinkedList.h"
 
 template <typename T>
@@ -150,5 +151,46 @@ void LinkedList<T>::deleteNodeByKey(int key) {
                 ptr->next = NULL;
             }
         }
+    }
+}
+
+/**
+ * @brief Updates data of a node specified by a key
+ * 
+ * Checks if the node specified by a key exists. If it does,
+ * updates its data. 
+ * 
+ * @tparam T The type of data stored in the Linked List.
+ * @param key The key of the node to update.
+ * @param data The new data of the node to update.
+ */
+template <typename T>
+void LinkedList<T>::updateNodeByKey(int key, T data) {
+    Node<T> *ptr = nodeExists(key);
+    if(ptr != NULL) {
+        ptr->data = data;
+        std::cout << "Node data updated sucessfully" << std::endl;
+    } else {
+        std::cout << "A node with this key value doesn't exist" << std::endl;
+    }
+}
+
+/**
+ * @brief Prints the Single Linked List.
+ * 
+ * @tparam T The type of data stored in the Linked List.
+ */
+template <typename T>
+void LinkedList<T>::printList() {
+    if(head == NULL) {
+        std::cout << "There aren't any nodes in Single Linked List" << std::endl;
+    } else {
+        std::cout << "Values of Single Linked List:" << std::endl;
+        Node<T> *temp = this->head;
+        while(temp != NULL) {
+            std::cout << "(" << temp->key << ", " << temp->data << ") --> ";
+            temp = temp->next;
+        }
+        std::cout << "END" << std::endl;
     }
 }

@@ -16,6 +16,8 @@ class LinkedList {
         void prependNode(Node<T> *);
         void insertNodeAfter(int, Node<T> *);
         void deleteNodeByKey(int);
+        void updateNodeByKey(int, T);
+        void printList();
 };
 
 #endif
