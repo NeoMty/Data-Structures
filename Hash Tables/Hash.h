@@ -6,11 +6,19 @@
 
 class Hash {
     private:
-        int tableSize;
+        static const int tableSize = 10;
+        struct item {
+            std::string name;
+            std::string drink;
+            item *next;
+        };
+
+        item *HashTable[tableSize];
 
     public:
         Hash();
         int converter(std::string);
+        void AddItem(std::string, std::string);
 };
 
 #endif
