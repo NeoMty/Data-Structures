@@ -13,9 +13,7 @@ This is where I show my personal implementations of Data Structures as I continu
 
 ## Progress
 This is the progress I have so far: 📝
- - [ ] Pointers (currently studying)
  - [ ] Linked Lists (currently studying)
- - [ ] Hash Tables (currently studying)
  
 ## Technologies
 These are the languages and programs I'm currently using to study: 👨🏻‍💻
